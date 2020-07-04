@@ -1,0 +1,18 @@
+Error: memory error: out of bound pointer
+File: Regexp.c
+Line: 23
+assembly.ll line: 76
+Stack: 
+	#000000076 in matchhere (=94452582729423, =94452582729352) at Regexp.c:23
+	#100000202 in matchstar (, =94452582729423, =94452582729352) at Regexp.c:16
+	#200000101 in matchhere (=94452582729421, =94452582729352) at Regexp.c:26
+	#300000202 in matchstar (, =94452582729421, =94452582729352) at Regexp.c:16
+	#400000101 in matchhere (=94452582729419, =94452582729352) at Regexp.c:26
+	#500000202 in matchstar (, =94452582729419, =94452582729352) at Regexp.c:16
+	#600000101 in matchhere (=94452582729417, =94452582729352) at Regexp.c:26
+	#700000029 in match (=94452582729416, =94452582729352) at Regexp.c:36
+	#800000179 in main () at Regexp.c:59
+Info: 
+	address: 94452582729423
+	next: object at 94452582729320 of size 3
+		MO7[3] allocated at global:.str

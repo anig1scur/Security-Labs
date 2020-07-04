@@ -1,0 +1,22 @@
+klee --only-output-states-covering-new Regexp.bc
+PID: 4951
+Using monotonic steady clock with 1/1000000000s resolution
+Started: 2020-05-25 08:52:51
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2020-05-25 08:53:33
+Elapsed: 00:00:42
+KLEE: done: explored paths = 7438
+KLEE: done: avg. constructs per query = 16
+KLEE: done: total queries = 158
+KLEE: done: valid queries = 14
+KLEE: done: invalid queries = 144
+KLEE: done: query cex = 158
+
+KLEE: done: total instructions = 4848112
+KLEE: done: completed paths = 7438
+KLEE: done: generated tests = 15

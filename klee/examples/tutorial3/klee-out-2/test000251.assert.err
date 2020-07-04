@@ -1,0 +1,6 @@
+Error: ASSERTION FAIL: 0
+File: maze.c
+Line: 106
+assembly.ll line: 193
+Stack: 
+	#000000193 in main (=1, =94493680682240) at maze.c:106
